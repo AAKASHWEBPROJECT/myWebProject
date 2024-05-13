@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feedback Form</title> 
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 80%;
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        background-color:orange;
+        background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    textarea {
+        height: 100px;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        background-color:red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: blue;
+    }
+     input[type="reset"] {
+        background-color: #4caf50;
+        background-color: cyan;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="reset"]:hover {
+        background-color: darkred;
+    }
+</style>
+<script>
+    function validateForm() {
+      var name=document.forms["myForm"]["name"].value;
+      if (name== "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2><u>Student Feedback Form</u></h2>
+   <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div class="form-group">
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label for="name">Enter Mobile Number:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Mobile Number">
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <label for="Gender">Your Gender:</label>
+           <input type="radio" name="gender" value="male"><b>Male</b>
+           <input type="radio" name="gender" value="female"><b>Female</b>
+        </div>
+        <div class="form-group">
+            <label for="board">Your Board:</label>
+            <select name="board" id="board">
+                <option value="State">State</option>
+                <option value="ICSE">ICSE</option>
+                <option value="CBSE">CBSE</option>
+            </select>   
+        <div class="form-group">
+            <label for="education">Your Education:</label>
+            <select name="education" id="edu">
+              <option value="sixth">6Th</option>
+              <option value="Seventh">7Th</option>
+              <option value="eighth">8TH</option>
+              <option value="nineth">9Th</option>
+              <option value="tenth">10Th</option>
+              <option value="eleventh">11Th</option>
+              <option value="twelleth">12Th</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message/Suggestion:</label>
+            <textarea id="message" name="message" placeholder="Enter Your Message/Suggestion" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Comments:</label>
+            <textarea id="message" name="message" placeholder="Enter Your Comments:" required></textarea>
+        </div>
+        <input type="submit" value="submit"><input type="reset" value="RESET">
+    </form>
+</div>
+
+</body>
+
+</html>

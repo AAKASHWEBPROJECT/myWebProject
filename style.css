@@ -1,0 +1,411 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.jpg);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+}
+nav img{
+width: 30px;
+}
+span
+{
+    color:red;
+}
+.navbar-brand
+{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+font-weight: 700;
+font-size: 17px;
+text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item
+{
+    margin: 0 15px;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link 
+{
+
+    color: white;
+
+}
+
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover
+{
+   border-bottom:3px solid white ;
+   color:rgb(255, 71, 71);
+}
+.navbar-dark .navbar-nav .nav-item .nav-link.active
+{
+    color: red;
+}
+.navbar-dark .navbar-nav .nav-item  .dropdown
+{
+    background: red;
+    color: #000;
+}
+.navbar
+{
+    
+    background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+
+   position: fixed;
+   width:100%;
+
+}
+ .navbar .navbar-nav .nav-item .nav-link.active
+ {
+    color: red;
+ }
+.navbar .navbar-nav
+{
+    color: lightgrey;
+}
+ .navbar .navbar-nav .nav-item .nav-link .dropdown-item:hover
+ {
+background-color: black;
+color: white;
+ }
+nav{
+position: sticky;
+}
+.navbar-dark
+{
+    box-shadow: 0 5px 10px #181717;
+}
+.dropdown-item
+{
+    background: linear-gradient(rgb(255, 208, 0),#ff8c00) ;
+    color:black;
+    list-style-position:inside;
+    border:0.9 px solid black;
+    display: none;
+
+}
+
+.navbar a
+{
+    display: block;
+}
+
+
+.navbar a:hover, .navbar .active > a, .navbar li:hover > a ,.dropdown-menu,
+.dropdown-item:hover
+{
+   background-color: rgb(255, 208, 0);
+ 
+   color: white;
+}
+.dropdown-menu,
+.dropdown-item:hover
+{
+    display: none;
+}
+
+.navbar .active > a
+{
+    background-color: orangered;
+    color: white;
+}
+.dropdown-item:hover
+{
+    display: block;
+}
+.dropdown-menu,
+.dropdown-item:hover
+{
+color:white;
+background-color:darkred;
+ background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+
+}
+.navbar a:hover > li
+ {
+    display: block;
+ }
+ .navbar ul li:hover .dropdown-menu,.dropdown-item
+ {
+    display: block;
+    background-color:rgb(255, 208, 0);
+    color:black;
+ }
+.textbox
+{
+text-align: center;
+left: 50%;
+top: 50%;
+width:90%;
+color:white;
+position: absolute;
+transform: translate(-50%,-50%);
+}
+.btn1
+{
+    color:whitesmoke;
+}
+.btn1:hover
+{
+    background-color: orangered;
+    color: white;
+}
+.btn2
+{
+    color:white;
+    background-color: orange;
+    transition: ease-out 0.3s;
+    border-radius:1rem ;
+    font-size: 1rem;
+
+}
+.btn3
+{
+    color:white;
+    background-color:red;
+     transition: ease-out 0.3s;
+    border-radius:1rem ;
+    font-size: 1rem;
+}
+.btn4
+{
+     color:white;
+    background-color:blue;
+     transition: ease-out 0.3s;
+    border-radius:1rem ;
+    font-size: 1rem; 
+}
+.btn2:hover
+{
+    color: white;
+
+}
+.btn3:hover
+{
+    color: white;
+    
+}
+.btn4:hover
+{
+    color: white;
+    
+}
+
+.inner-container
+{
+    width:100% ;
+    float: right;
+    background-color:lightgrey;
+    padding: 150px;
+    box-shadow:0px 0px 30px 0 rgba(0, 0, 0,0.9);
+
+}
+.inner-container h1
+{
+    margin-bottom: 30px;
+    font-size:30px;
+    font-weight:900;
+    text-align: center;
+
+}
+.inner-container h1:after
+{
+    content: "";
+    display:block;
+    width:100%;
+    height: 1px;
+    left: 0;
+    background:white;
+    transition: width 0.3s;
+}
+.text
+{
+font-size:13px;
+color:#333;
+line-height:30px;
+text-align:justify;
+margin-bottom:40px ;
+}
+.btn5
+{
+    background-color: orange;
+    color: white;
+    font-size:22px;
+    transition: 0.2s;
+}
+.btn5:hover
+{
+background-color: red;
+color: white;
+}
+@media (max-width: 1200px)
+{
+    .inner-container
+    {
+        padding:80px;
+        background-color:black;
+        color: white;
+        width:60%;
+    }
+.about
+{
+    background: url(learn2.jpg) no-repeat left;
+background-size:50%;
+background-color:lightgrey;
+}
+.text
+{
+font-size:15px;
+color:white;
+}
+.dropdown-item
+{
+    background-color: white;
+    color:black;
+    list-style-position:inside;
+    border:0.9 px solid black;
+
+}
+.dropdown-item:hover
+{
+color:white;
+background-color: red;
+ background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+}
+}
+@media screen(max-width: 900px)
+{
+    .inner-container
+    {
+        width:100%;
+         background-color: orangered;
+    }
+    .about
+    {
+          background: url(learn2.jpg) no-repeat left;
+           background-size:60%;
+           background-color:orangered;
+    }
+    .dropdown-item
+{
+    background-color: white;
+    color:black;
+    list-style-position:inside;
+    border:0.9 px solid black;
+
+}
+.dropdown-item:hover
+{
+color:white;
+background-color: red;
+ background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+}
+@media screen(max-width: 600px)
+{
+    .inner-container
+    {
+     padding:60px;
+      width:55% ;
+    }
+    .about
+    {
+      padding:0;
+    }
+    .dropdown-item
+{
+    background-color: white;
+    color:black;
+    list-style-position:inside;
+    border:0.9 px solid black;
+
+}
+.dropdown-item:hover
+{
+color:white;
+background-color: red;
+ background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+}
+}
+@media (max-width: 360px)
+{
+    .inner-container
+    {
+        padding:80px;
+        background-color:lightgrey;
+        color: black;
+        width:110%;
+
+    }
+.about
+{
+    background: url(learn2.jpg) no-repeat left;
+background-size:50%;
+background-color:lightgrey;
+}
+.text
+{
+font-size:15px;
+color:white;
+}
+.dropdown-item
+{
+    background-color: white;
+    color:black;
+    list-style-position:inside;
+    border:0.9 px solid black;
+
+}
+.dropdown-item:hover
+{
+color:white;
+background-color: red;
+ background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+}
+}
+@media (max-width: 425px)
+{
+
+        .about
+{
+    background: url(learn2.jpg) no-repeat left;
+background-size:60%;
+background-color:lightgrey;
+}
+  .inner-container
+    {
+        padding:80px;
+        background-color:lightgrey;
+        color: black;
+        width:110%;
+
+    } 
+    .text
+{
+font-size:15px;
+color:black;
+}
+    .dropdown-item
+{
+    background-color: white;
+    color:black;
+    list-style-position:inside;
+    border:0.9 px solid black;
+
+}
+.dropdown-item:hover
+{
+color:white;
+background-color: red;
+ background: linear-gradient(rgb(255, 208, 0),#ff8c00);
+}  
+}
